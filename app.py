@@ -5,7 +5,7 @@ import os
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
 
-model_id = 'meta-llama/Llama-2-7b-chat-hf'
+model_id = 'meta-llama/Llama-2-13b-chat-hf'
 
 class InferlessPythonModel:
     def get_prompt(self, message, chat_history,
