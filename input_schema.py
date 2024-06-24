@@ -9,6 +9,6 @@ INPUT_SCHEMA = {
         'datatype': 'STRING',
         'required': False,
         'shape': [-1,2],
-        'example': ["How to make a omellete ?", "How to make a omellete ?"]
+        'example': [["How to make a omellete ?", "How to make a omellete ?"]]
     }
 }
