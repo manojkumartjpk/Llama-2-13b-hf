@@ -11,7 +11,9 @@ class InferlessPythonModel:
     def get_prompt(self, message, chat_history,
                system_prompt):
         texts = [f'[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n']
-        for user_input, response in chat_history:
+        for chat in chat_history:
+            user_input = chat[0]
+            response = chat[1]
             texts.append(f'{user_input.strip()} [/INST] {response.strip()} </s><s> [INST] ')
         texts.append(f'{message.strip()} [/INST]')
         return ''.join(texts)
