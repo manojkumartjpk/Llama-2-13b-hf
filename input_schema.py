@@ -7,7 +7,7 @@ INPUT_SCHEMA = {
     },
     'chat_history': {
         'datatype': 'STRING',
-        'required': False,
+        'required': True,
         'shape': [-1,2],
         'example': [["How to make a omellete ?", "How to make a omellete ?"]]
     }
